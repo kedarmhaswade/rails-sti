@@ -1,0 +1,8 @@
+<%= simple_form_for @vehicle do |f| %>
+  <%= f.error_messages %>
+  <%= f.input :type, :collection => Vehicle.subtypes %>
+  <%= f.input :color%>
+  <%= f.input :year, :collection => 1950..2011 %>
+  <%= f.button :submit %>
+
+<% end %>

@@ -1,0 +1,20 @@
+<% title "Vehicle" %>
+
+<p>
+  <strong>Type:</strong>
+  <%= @vehicle.type %>
+</p>
+<p>
+  <strong>Color:</strong>
+  <%= @vehicle.color %>
+</p>
+<p>
+  <strong>Year:</strong>
+  <%= @vehicle.year %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_vehicle_path(@vehicle) %> |
+  <%= link_to "Destroy", @vehicle, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", vehicles_path %>
+</p>

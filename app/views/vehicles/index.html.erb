@@ -1,0 +1,21 @@
+<% title "Vehicles" %>
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Color</th>
+    <th>Year</th>
+  </tr>
+  <% for vehicle in @vehicles %>
+    <tr>
+      <td><%= vehicle.type %></td>
+      <td><%= vehicle.color %></td>
+      <td><%= vehicle.year %></td>
+      <td><%= link_to "Show", vehicle %></td>
+      <td><%= link_to "Edit", edit_vehicle_path(vehicle) %></td>
+      <td><%= link_to "Destroy", vehicle, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Vehicle", new_vehicle_path %></p>

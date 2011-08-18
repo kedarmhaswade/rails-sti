@@ -1,0 +1,9 @@
+one:
+  type: MyString
+  color: MyString
+  year: 1
+
+two:
+  type: MyString
+  color: MyString
+  year: 1
